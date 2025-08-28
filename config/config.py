@@ -8,8 +8,8 @@ load_dotenv()
 
 # Base URL and credentials
 BASE_URL = os.getenv("BASE_URL", "https://clinic-local.amaz.com.vn/login#/login")
-USERNAME = os.getenv("USERNAME", "huynk.software@gmail.com")
-PASSWORD = os.getenv("PASSWORD", "111111a@A")
+USERNAME = os.getenv("USERNAME", "")
+PASSWORD = os.getenv("PASSWORD", "")
 
 # Browser configuration
 BROWSER = os.getenv("BROWSER", "chrome")
