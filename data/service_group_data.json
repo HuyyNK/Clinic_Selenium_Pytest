@@ -1,0 +1,11 @@
+{
+  "test_cases": [
+    {
+      "test_id": 1,
+      "group_name": "Nhóm Nhi Khoa Test 1",
+      "description": "Nhóm dịch vụ dành cho khoa Nhi",
+      "new_group_name": "Nhóm Nhi Khoa Test 1 (Edited)",
+      "new_description": "Nhóm dịch vụ chỉnh sửa cho khoa Nhi"
+    }
+  ]
+}
