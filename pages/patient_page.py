@@ -74,10 +74,11 @@ class PatientPage:
         option_el = self.wait.until(EC.element_to_be_clickable(self.priority_normal))
         option_el.click()
 
-    def _upload_images(self, image_path):
-        """Upload images using the file input element."""
+    def _upload_images(self, image_paths):
+        """Upload one or multiple images using the file input element."""
         input_el = self.wait.until(EC.presence_of_element_located(self.upload_input))
-        input_el.send_keys(image_path)
+        for path in image_paths:
+            input_el.send_keys(path)
         self.wait.until(EC.visibility_of_element_located((By.XPATH, "//div[contains(@class, 'ant-upload-list')]")))
 
     def _select_service_nhi_khoa_d(self):
